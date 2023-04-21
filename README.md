@@ -12,4 +12,9 @@ ive added the diagram to our repo
 --------------------------------------
 
 SEIFitness App
-User views list of exercises (index) and can select which ones to perform (show). The user can add exercises to the db (new, create), delete exercises from their chosen set(delete) and edit existing exercises (edit, update). The exercises will have a type attribute (Schema) and users can navigate to a page specific to that attribute from the navbar. From the show page selection of exercises, the user will be able to indicate when they've completed exercises and provide a rating, reps, and other details (embedded schema). User can view the entire app as an authenticated/authorized user to see their specific history or without a log-in to view without attached history or exercise reviews.
+
+User begins by logging into the app. From there, they are able to view exercise (index) from our fitness databse. They can create a workout session (new, create), adding, editing, and deleting exercises in their session (show, edit, delete).
+
+Exercises in the database will have type attributes (Schema), allowing them to be seperated or organized select exercises. They can even rate an exercises and view ratings, completed reps and sets, among other details (embedded schema).
+
+While a user will have acccess to the database of exercises and exercise ratings, only by authenication/authorized user can they create sessions, edit their history, and attach reviews.
