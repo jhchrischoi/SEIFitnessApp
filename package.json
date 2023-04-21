@@ -1,9 +1,10 @@
 {
   "name": "seifitnessapp-1",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "The fitness app to end all fitness apps",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,6 +13,25 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "cheerio": "^1.0.0-rc.6",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mocha": "^8.3.2",
+    "mongo-unit": "^2.0.1",
+    "mongoose": "^5.12.13",
+    "morgan": "^1.10.0",
+    "supertest": "^6.1.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express-session": "^1.17.3",
+    "http-errors": "~1.6.3",
+    "passport": "^0.6.0",
+    "passport-google-oauth": "^2.0.0"
+  },
   "bugs": {
     "url": "https://github.com/jhchrischoi/SEIFitnessApp-1/issues"
   },
