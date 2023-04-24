@@ -39,7 +39,7 @@ app.use(function (req, res, next) {
 });
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
-app.use('/exercise', exerciseRouter);
+app.use('/', exerciseRouter);
 
 // error handler
 app.use(function(err, req, res, next) {
