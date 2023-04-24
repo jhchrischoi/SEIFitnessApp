@@ -16,4 +16,7 @@ const exerciseController = require('../controllers/exercise')
 
 // router.put('/:id', exerciseController.update);
 
+//API Routes
+//router.post('/:id/api', exerciseController.createAPi)
+
 module.exports = router;
