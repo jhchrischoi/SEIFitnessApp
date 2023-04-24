@@ -2,10 +2,12 @@ const createError = require('http-errors');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
-const db = require('./config/database');
-const passport = require('./config/passport');
+const passport = require('passport');
 const express = require('express');
 const app = express();
+const db = require('./config/database');
+const passPortDb = require('./config/passport');
+
 
 require('dotenv').config()
 
