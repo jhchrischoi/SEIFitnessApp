@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3000
 
 
 const indexRouter = require('./routes/index');
-const exerciseRouter = require('./routes/exercises');
+const exerciseRouter = require('./routes/exercise');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const exerciseController = require('../controllers/exercises')
+const exerciseController = require('../controllers/exercise')
 
 // router.get('/', exerciseController.index);
 
@@ -15,5 +15,8 @@ const exerciseController = require('../controllers/exercises')
 // router.get('/:id/edit', exerciseController.edit);
 
 // router.put('/:id', exerciseController.update);
+
+//API Routes
+//router.post('/:id/api', exerciseController.createAPi)
 
 module.exports = router;
