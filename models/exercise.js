@@ -4,23 +4,23 @@ const Schema = mongoose.Schema;
 
 
 // trying to get API work, but I came up with this model just in case
-const movementSchema = new Schema ({
-    movement:{
-        type: String,
-        enum:['Squat','Hinge','Lunge','Pull','Press','Rotation','Combination','Plyometric','Gymnastics','Kettlebell','Olmypic','Chest','Biceps', 'Triceps', 'Forearms','Hamstrings','Quads','Calves','Glutes','Anterior Core', 'Lateral Core','Posterior Core'],
-        required: true
-    },
-    equipment:{
-        type: String,
-        enum:['BB','DB','Cable','Bodyweight','Band','TRX','KB','Machine','Mini Band','BOSU','Balance Beam','Foam Balance Pad']
-    },
-    performedDate: {
-        type: Date,
-        default: new Date().setFullYear(new Date().getFullYear() + 1)
-    },
-    exercises: [exerciseSchema],
-    notes: [noteSchema]
-})
+// const movementSchema = new Schema ({
+//     movement:{
+//         type: String,
+//         enum:['Squat','Hinge','Lunge','Pull','Press','Rotation','Combination','Plyometric','Gymnastics','Kettlebell','Olmypic','Chest','Biceps', 'Triceps', 'Forearms','Hamstrings','Quads','Calves','Glutes','Anterior Core', 'Lateral Core','Posterior Core'],
+//         required: true
+//     },
+//     equipment:{
+//         type: String,
+//         enum:['BB','DB','Cable','Bodyweight','Band','TRX','KB','Machine','Mini Band','BOSU','Balance Beam','Foam Balance Pad']
+//     },
+//     performedDate: {
+//         type: Date,
+//         default: new Date().setFullYear(new Date().getFullYear() + 1)
+//     },
+//     exercises: [exerciseSchema],
+//     notes: [noteSchema]
+// })
 // One:Many (like reviews to a movie in our movie-express during class)
 const noteSchema = new mongoose.Schema({
     reps:{
@@ -55,7 +55,7 @@ const noteSchema = new mongoose.Schema({
     }
 })
 // each movement (from movementSchema) will have set (options) of exercises)
-const exerciseSchema = new mongoose.Schema({
+const exerciseSchema = new Schema({
     squat: {
         type:String,
         enum:['Back Squat',
@@ -415,4 +415,4 @@ const exerciseSchema = new mongoose.Schema({
 // so in each movement, there are these specific exercises
 // const exerciseSchema =
 
-module.exports = mongoose.model('Exercise', movementSchema)
+module.exports = mongoose.model('Exercise', exerciseSchema)
