@@ -1,5 +1,14 @@
-module.exports = {
-    //index
+const Exercise = require('../models/exercise')
+
+ const exerciseController = {
+    
+    index: async (req, res) => {
+        console.log('index works')
+        // const exercises = await Exercise.find({});
+        res.render('exercises/index', {
+            // exercises
+        })
+    },
     //new
     //show
     //create
@@ -31,3 +40,5 @@ module.exports = {
             }
         }
     }
+
+    module.exports = exerciseController

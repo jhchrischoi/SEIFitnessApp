@@ -1,13 +1,6 @@
 # SEIFitnessApp
 
 Stargate - 04192341412
-Tim - working on this commit. Unsure if it will work. Good luck.
-
-Currently. We're having some problems.
-
-hi this is chris
-
-ive added the diagram to our repo
 
 --------------------------------------
 
@@ -18,3 +11,8 @@ User begins by logging into the app. From there, they are able to view exercise 
 Exercises in the database will have type attributes (Schema), allowing them to be seperated or organized select exercises. They can even rate an exercises and view ratings, completed reps and sets, among other details (embedded schema).
 
 While a user will have acccess to the database of exercises and exercise ratings, only by authenication/authorized user can they create sessions, edit their history, and attach reviews.
+
+----------------------------------------
+Stargate - 044453499181
+
+Google OAuth is configured and the server runs. Skeleton complete! 4.23
