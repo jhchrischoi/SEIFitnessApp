@@ -7,12 +7,12 @@ const Schema = mongoose.Schema;
 const movementSchema = new Schema ({
     movement:{
         type: String,
-        enum:['Squat','Hinge','Lunge','Vertical/Horizontal Pull','Push/Press','Rotation','Combination','Plyometric','Gymnastics','Kettlebell','Olmypic','Chest','Biceps', 'Triceps', 'Foreamrs','Hamstrings','Quads','Calves','Glutes','Anterior Core', 'Lateral Core','Posterior Core'],
+        enum:['Squat','Hinge','Lunge','Pull','Press','Rotation','Combination','Plyometric','Gymnastics','Kettlebell','Olmypic','Chest','Biceps', 'Triceps', 'Forearms','Hamstrings','Quads','Calves','Glutes','Anterior Core', 'Lateral Core','Posterior Core'],
         required: true
     },
     equipment:{
         type: String,
-        enum:['BB','DB','Cable','Bodyweight','Band','TRX','KB','Machine','Mini Band','BOSU','Balance Beam','Foam Balance Pad','']
+        enum:['BB','DB','Cable','Bodyweight','Band','TRX','KB','Machine','Mini Band','BOSU','Balance Beam','Foam Balance Pad']
     },
     performedDate: {
         type: Date,
